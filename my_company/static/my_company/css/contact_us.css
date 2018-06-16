@@ -1,0 +1,67 @@
+#container-1{
+  background-color: white;
+}
+#contact-us {
+    padding: 50px 20px;
+    position: relative;
+    /* background: #f7f7f7; */
+    background-color: #f5f7fa;
+}
+#contact-us .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+#contact-us .wrap .panel-left {
+    display: inline-block;
+    padding-right: 10%;
+    vertical-align: top;
+    width: 70%;
+    line-height: 1.5;
+    text-align: left;
+}
+#contact-us .wrap .panel-left h1 {
+    font-size: 35px;
+    margin: 0 0 10px;
+}
+#contact-us .wrap .panel-left h3 {
+    font-size: 25px;
+    margin: 15px 0 10px;
+    font-weight: 500;
+}
+#contact-us .contact-form {
+    margin-top: 30px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#contact-us .wrap .panel-right {
+    text-align: left;
+    display: inline-block;
+    width: 25%;
+    line-height: 1.5;
+    font-style: italic;
+}
+#contact-us .wrap .panel-right h3 {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 0 15px;
+}
+#contact-us .wrap .panel-right p {
+    margin: 0 0 15px;
+    font-weight: 400;
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#contact-us .wrap .panel-right a {
+    color: #00c5be;
+}
+#contact-us{
+  font-family: "Courier New", Courier, monospace;
+}

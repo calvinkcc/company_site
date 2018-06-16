@@ -1,0 +1,94 @@
+#container-1{
+  margin-top: 50px;
+}
+#h1-1{
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+#p-1{
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+#p-2{
+  font-family: "Courier New", Courier, monospace;
+}
+#h2-1{
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+#first-block{
+  background-color: white;
+}
+#second-block{
+  background-color: white;
+}
+#h1-2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+#h2-2{
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+#p-3{
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+#p-4{
+  font-family: "Courier New", Courier, monospace;
+}
+#cal-img{
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+  height: 180px;
+  transform: rotate(90deg);
+}
+.carousel-item{
+  height: auto;
+  width: auto;
+}
+/*  carousel styles*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+  margin-bottom: 300px;
+}
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 25px;
+  color: black;
+}
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 25px;
+  color: black;
+}
+.carousel-indicators{
+  position: inherit;
+}
+.carousel-indicators li {
+  background-color: rgba(70,70,70,.25);
+  border:1px solid #444;
+}
+.carousel-indicators .active {
+  background-color: #444;
+  border:1px solid #444;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+  }
+}
