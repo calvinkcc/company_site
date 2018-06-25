@@ -1,7 +1,10 @@
 #container-1{
+    margin-left:auto;
+    margin-right:auto;
   margin-top: 50px;
 }
 #h1-1{
+  white-space: nowrap;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
@@ -10,24 +13,32 @@
   font-family: "Courier New", Courier, monospace;
 }
 #p-2{
+  text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
 #h2-1{
+    white-space: nowrap;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
 #first-block{
+   margin-left:auto;
+    margin-right:auto;
   background-color: white;
 }
 #second-block{
+  margin-left:auto;
+    margin-right:auto;
   background-color: white;
 }
 #h1-2{
+    white-space: nowrap;
   text-align: center;
   margin-bottom: 20px;
   font-family: "Courier New", Courier, monospace;
 }
 #h2-2{
+    white-space: nowrap;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
@@ -36,6 +47,7 @@
   font-family: "Courier New", Courier, monospace;
 }
 #p-4{
+  text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
 #cal-img{
@@ -45,7 +57,6 @@
   margin-right: auto;
   width: 180px;
   height: 180px;
-  transform: rotate(90deg);
 }
 .carousel-item{
   height: auto;
@@ -84,11 +95,4 @@
 .carousel-indicators .active {
   background-color: #444;
   border:1px solid #444;
-}
-@media (min-width: 768px) {
-  .flex-md-equal > * {
-    -ms-flex: 1;
-    -webkit-box-flex: 1;
-    flex: 1;
-  }
 }
