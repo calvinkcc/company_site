@@ -1,0 +1,21 @@
+{% extends "services/service_base.html" %}
+{% block content %}
+{% load staticfiles %}
+
+<h2 style="text-decoration: underline">Online Marketing</h2>
+<p><b>Need advertising help or marketing/branding consultant?</b></p>
+<hr>
+<div class="row">
+  <div class="col-lg-6">
+    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/tech.jpg' %}" alt="">
+  </div>
+  <div class="col-lg-6">
+    <p>We have a set of rules when advertising and marketing for businesses. <br>1. <b>Budget</b>- We will ask for very little.
+      <br>2. <b>Targeted Audience</b>- We will help you define what's best.
+        <br>3. <b>Proposal</b>- We proceed with the proposal only if you like it.
+        <br>4. <b>Action</b>- We will take into many forms of advertising on social media platforms, ads and SEO(Search Engine Optimization).
+        <br>5. <b>Waves</b>- We will perform the advertising in waves, if first wave is a success we proceed to wave 2 with a higher budget... </p>
+  </div>
+</div>
+
+{% endblock %}

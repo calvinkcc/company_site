@@ -1,0 +1,18 @@
+{% extends "services/service_base.html" %}
+{% block content %}
+{% load staticfiles %}
+
+<h2 style="text-decoration: underline">Wall Mounts</h2>
+<p><b>Wall mount for home or office settings i.e. conference rooms</b></p>
+<hr>
+<div class="row">
+  <div class="col-lg-6">
+    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/tech.jpg' %}" alt="">
+  </div>
+  <div class="col-lg-6">
+    <p>1. <b>Home setting</b>- Wall mount TV for home setting
+      <br>2. <b>Business/Office setting</b>- Wall mount TV or monitor for office or business setting.</p>
+  </div>
+</div>
+
+{% endblock %}
