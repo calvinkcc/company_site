@@ -26,5 +26,8 @@ urlpatterns = [
     url (r'^home/', include('django.contrib.auth.urls')),
     url(r'^contact_us/',include('contact_us.urls',namespace='contact_us')),
     url(r'^about_us/',include('about_us.urls',namespace='about_us')),
+    url(r'^services/',include('services.urls',namespace='services')),
+    url(r'^features/',include('features.urls',namespace='features')),
+    url(r'^blog/',include('blog.urls',namespace='blog')),
     url (r'^thanks/$', views.ThanksPage.as_view(), name='thanks'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

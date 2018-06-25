@@ -1,0 +1,20 @@
+{% extends "services/service_base.html" %}
+{% block content %}
+{% load staticfiles %}
+
+<h2 style="text-decoration: underline">Security Camera/Smart Home Devices Installation</h2>
+<p><b>Secure your business or home with security cameras and smart home devices.</b></p>
+<hr>
+<div class="row">
+  <div class="col-lg-6">
+    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/tech.jpg' %}" alt="">
+  </div>
+  <div class="col-lg-6">
+    <p><b>The cameras and setup we conduct depend on your budget. But as recommended we will always recommend cameras with NVRs that are POE(Power Over Ethernet).</b></p>
+    <p>1. <b>Business</b>- Security camera installation with DVR or NVR, client's choice and budget will be match accordingly.</p>
+    <p>2. <b>Home or home office</b>- Security camera installation with DVR or NVR, client's choice and budget will be match accordingly. We can also installation smart home devices like Alexa
+      , smart doorbell, smart doorlock and etc..</p>
+  </div>
+</div>
+
+{% endblock %}

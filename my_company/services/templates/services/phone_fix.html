@@ -1,0 +1,19 @@
+{% extends "services/service_base.html" %}
+{% block content %}
+{% load staticfiles %}
+
+<h2 style="text-decoration: underline">Phone Issues</h2>
+<p><b>Mobile phones like iPhones and Samsung we don't fix in house, we have a trusted company that we outsource to, they have been fixing phones from motherboard to screen for over 20 years. But..</b></p>
+<hr>
+<div class="row">
+  <div class="col-lg-6">
+    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/tech.jpg' %}" alt="">
+  </div>
+  <div class="col-lg-6">
+    <p>The phone service we provide are usually for businesses, for example, VoIP phones where the phone does not connect to a landline(phone cable) but connected to a Cat 5 or Cat 6
+      Ethernet cable. This type of phone does not require a phone line or landline to operate, it's Voice over IP and it's POE(Power over ethernet) we service most of time. So the entire phone
+      is operatable with just 1 cable.</p>
+  </div>
+</div>
+
+{% endblock %}

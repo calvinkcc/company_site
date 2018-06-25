@@ -1,0 +1,19 @@
+{% extends "services/service_base.html" %}
+{% block content %}
+{% load staticfiles %}
+
+<h2 style="text-decoration: underline">Web Development</h2>
+<p><b>Looking to showcase your business into the online world?</b></p>
+<hr>
+<div class="row">
+  <div class="col-lg-6">
+    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/tech.jpg' %}" alt="">
+  </div>
+  <div class="col-lg-6">
+    <p><b>Full web development service- </b>We are capable of development your entire web service for your clients to meet the virtual demands. The host and DNS name will be up to the client and we will also
+      take care of that for you accordingly. This service does not just create a site and just throw it back at you. We will offer you full documentations of development, setup and future support.</p>
+      <p><b>Only Web Design Service- </b>Have a website? But not sure if the design attracts the right customer for you? Let us help you and make sure the designs are for the right consumer.</p>
+  </div>
+</div>
+
+{% endblock %}

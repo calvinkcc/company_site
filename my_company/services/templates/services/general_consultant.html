@@ -1,0 +1,19 @@
+{% extends "services/service_base.html" %}
+{% block content %}
+{% load staticfiles %}
+
+<h2 style="text-decoration: underline">IT Consultant</h2>
+<p><b>Network, computer, phone, cabling, and any other managed IT solution you need. </b></p>
+<hr>
+<div class="row">
+  <div class="col-lg-6">
+    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/tech.jpg' %}" alt="">
+  </div>
+  <div class="col-lg-6">
+    <p>1. <b>Startup Business</b>- IT consultant for startup company.</p>
+    <p>2. <b>Outdated IT Infrastructure</b>- Upgrade existing IT Infrastructure.</p>
+    <p>3. <b>Relocate</b>- Relocate business to another location.</p>
+  </div>
+</div>
+
+{% endblock %}

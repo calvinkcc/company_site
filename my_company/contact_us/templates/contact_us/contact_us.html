@@ -5,33 +5,32 @@
 <head>
   <link rel="stylesheet" href="{% static 'my_company/css/contact_us.css' %}">
 </head>
-
 <section id="contact-us">
   <div class="container">
-    <div class="jumbotron" id="container-1">
-  <div class="wrap">
-    <div class="panel-left">
-      <h1>Let us help you!</h1>
-      <h2>Fill out the form and submit it!</h2>
-      <h3>We will get back to you as soon as possible.</h3>
-      <div class="contact-form" id="contact_form">
-        <form method="POST">
-          {% csrf_token %}
-          {% bootstrap_form form %}
-          <input type="submit" class='btn btn-default' value="Submit Form">
-        </form>
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="jumbotron" id="container-1">
+          <h3>Contact Us</h3>
+          <p>For any support, questions or inquires: <br>
+            Email us at
+            <a href="mailto:kccstechcompany@gmail.com" target="_blank">kccstechcompany@gmail.com</a>
+            <br> or call us at: 123-123-1234
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-8 mb-4">
+        <div class="jumbotron" id="container-1">
+          <h1>Send us a Message</h1>
+          <div class="contact-form" id="contact_form">
+            <form method="POST">
+              {% csrf_token %}
+              {% bootstrap_form form %}
+              <input type="submit" class='btn btn-default black-background white' value="Submit Form">
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="panel-right">
-      <h3>Contact Us</h3>
-      <p>For any support, questions or inquires: <br>
-          Email us at
-        <a href="mailto:support@onetech.com" target="_blank">support@onetech.com</a>
-          <br> or call us at: 123-123-1234</p>
-    </div>
   </div>
-</div>
-</div>
 </section>
-
 {% endblock %}

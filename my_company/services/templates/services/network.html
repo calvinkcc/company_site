@@ -1,0 +1,21 @@
+{% extends "services/service_base.html" %}
+{% block content %}
+{% load staticfiles %}
+
+<h2 style="text-decoration: underline">Home/Business Network Infrastructure</h2>
+<p><b>Full network installation/setup </b></p>
+<hr>
+<div class="row">
+  <div class="col-lg-6">
+    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/tech.jpg' %}" alt="">
+  </div>
+  <div class="col-lg-6">
+    <p>1. <b>Business</b>- Proper installation of server room and network.</p>
+    <p>2. <b>Home or home office</b>- Proper installation of home network in a small cabinet or client preferred.</p>
+    <p>For the network setup, we first contact your local ISP(internet service provider) and get the best possible price for your internet service. If we need fax or VoIP phones we can add those in as well.
+        Devices we usually use to conduct a full network setup would be an ISP modem from the ISP, a physical firewall, a managed switch, and if needed we put in routers. But all these depend on the
+        client's need and we will conduct the setup accordingly and at low budget.</p>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "services/service_base.html" %}
+{% block content %}
+{% load staticfiles %}
+
+<h2 style="text-decoration: underline">Computer Issues</h2>
+<p><b>Computer we specialize in PCs with Windows or Linux OS, unfortunately we don't service Mac. But if you call us we will always try our best to consult for free with Mac even if we have to find another party to help you.</b></p>
+<hr>
+<div class="row">
+  <div class="col-lg-6">
+    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/tech.jpg' %}" alt="">
+  </div>
+  <div class="col-lg-6">
+    <p>1. <b>Hardware</b>- If there is an hardware issue, we can help replace the part.</p>
+    <p>2. <b>Software</b>- If you need software specifically for your company but need consultant or remote support we can help.</p>
+    <p>3. <b>Custom PC build</b>- Need a beast gaming PC or for other purposes, we can help as well with low budget.</p>
+    <p>4. <b>Business standard PCs</b>- Replacement of old business PCs or upgrade them.</p>
+  </div>
+</div>
+
+{% endblock %}
