@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="image/jpg" href="{% static 'my_company/images/header.ico' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>KccsTech</title>
     <link rel="stylesheet" href="{% static 'my_company/css/master.css' %}">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -21,14 +22,21 @@
   </head>
   <body>
     <div id="wrapper" class="home-page">
-      <div id="navbar-1" class= "topbar">
+      <div id="navbar-1" class= "topbar" style="background-color: #08202e;">
         <div class="container">
           <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-6">
               <p><i class="fa fa-clock-o"></i>Business hours: Mon-Sun 9 A.M-9 P.M - Remote support is 24/7</p>
             </div>
             <div class="col-md-4">
               <p><i class="fa fa-phone"></i>Phone No. 123-123-1234</p>
+            </div>
+            <div class="col-md-2">
+              <div class="row">
+                <a id="top_a" href="#"><i id="social_1" class="fa fa-facebook"></i></a>
+                <a id="top_a" href="#"><i id="social_1" class="fa fa-twitter"></i></a>
+                <a id="top_a" href="#"><i id="social_1" class="fa fa-youtube"></i></a>
+              </div>
             </div>
           </div>
         </div>
@@ -57,9 +65,9 @@
                   <a class="dropdown-item" href="{% url 'services:other_devices' %}">Wall Mount for Home/Business</a>
                 </div>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="{% url 'features:features' %}">Features</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'about_us:about_us' %}">About Us</a>
               </li>
@@ -77,11 +85,26 @@
       <h1>Base</h1>
       {% endblock %}
       <!-- Footer -->
-      <footer class="footer py-5 bg-dark">
-        <div class="container">
-          <p class="m-0 text-center text-white">Copyright &copy; KccsTech 2018</p>
+      <footer class="page-footer pt-4 mt-4" style="background-color: #08202e;">
+        <div class="container-fluid text-center text-md-left">
+          <div class="row">
+            <div class="col-md-6 mt-md-0 mt-3">
+              <h5 class="text-left"><img src="{% static 'my_company/images/brand.jpg' %}" width="180" height="50" alt=""></h5>
+              <p class="text-left text-white">No <strong>STORE FRONT</strong> we bring <strong>"ONE STOP"</strong> tech solutions to your doorstep.</p>
+              <p class="text-left text-white"><i class="fa fa-clock-o"></i> Business hours: Mon-Sun 9 A.M-9 P.M - Remote support is 24/7</p>
+              <p class="text-left text-white"><i class="fa fa-phone"></i> Phone No. 123-123-1234</p>
+            </div>
+            <div class="row">
+                <a id="footer_a" href="#"><i id="social_2" class="fa fa-facebook"></i></a>
+                <a id="footer_a" href="#"><i id="social_2" class="fa fa-twitter"></i></a>
+                <a id="footer_a" href="#"><i id="social_2" class="fa fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-copyright text-center py-1">
+            <hr style="background-color:#888d90;">
+            <p class="text-center" style="color:#888d90">Copyright &copy; KccsTech 2018 All Rights Reserved | Template Design & Development by <a href="">KccsTech</a></p>
+          </div>
         </div>
-        <!-- /.container -->
       </footer>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

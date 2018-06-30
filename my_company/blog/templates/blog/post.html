@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+
+{{blog.text|safe|linebreaks}}
+{{blog.title|safe|linebreaks}}
+{{blog.description|safe|linebreaks}}
+
+
+
+
+{% endblock %}
