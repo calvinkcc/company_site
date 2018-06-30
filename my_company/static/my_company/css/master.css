@@ -1,8 +1,6 @@
 #wrapper{
 	width:100%;
 	height: 100%;
-	margin:0;
-	padding:0;
 }
 .topbar{
 	background-color: #37393c;
@@ -12,7 +10,7 @@
 }
 .topbar p{
 	margin:0;
-	font-size:11px;
+	font-size:14px;
 	color: #f1f6ff;
 }
 .topbar p > i{
@@ -36,53 +34,63 @@
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: #000000;
+    color: #808080;
     background-color: #FFFFFF; /* add background-color to active links */
-}
-.carousel-item {
-  height: 35vw;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.carousel-item video {
-  /* Make video to at least 100% wide and tall */
-
-  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-  width: auto;
-  height: auto;
-
-  /* Center the video */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
 }
 html {
   position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 80px;
+	height: 100%;
 }
 .footer {
-  position: absolute;
-  bottom: 0;
+  position: relative;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
 }
+#social_2{
+	padding-top: 8px;
+  font-size: 50px;
+  width: 70px;
+	height: 70px;
+  text-align: center;
+  text-decoration: none;
+	border-radius: 50%;
+}
+#social_1{
+	padding-top: 5px;
+  font-size: 15px;
+  width: 25px;
+	height:25px;
+  text-align: center;
+  text-decoration: none;
+	border-radius: 50%;
+}
+#footer_a
+{
+	margin-top: 70px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#top_a{
+	margin: 0px 10px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
 /* service_base.html */
-#service-background {
-background-image: url("/static/my_company/images/logo.jpg");
-background-size: 100% 100%;
-width: 100%;
-height:300px;
-}
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */
 
 }
@@ -110,13 +118,14 @@ height:300px;
 #sidebar .list-group {
     min-width: 200px;
     background-color: #333;
+		min-height: 100vh;
 }
 #sidebar i {
     margin-right: 6px;
 }
 
 #sidebar .list-group-item {
-    border-radius: 15px;
+    border-radius: 0;
     background-color: #333;
     color: #ccc;
     border-left: 0;
@@ -204,6 +213,11 @@ height:300px;
     #sidebar .list-group > .list-group-item[aria-expanded="false"]::after {
         display:none;
     }
+		#footer_a{
+			margin-top:0;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
 }
 
 .collapse.show {
