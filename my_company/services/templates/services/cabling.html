@@ -1,17 +1,34 @@
 {% extends "services/service_base.html" %}
-{% block content %}
 {% load staticfiles %}
 
-<h2 style="text-decoration: underline">Cabling installation or cleanup</h2>
+{% block meta %}
+<title>Cabling Services | KccsTech</title>
+<meta name="description" content="KccsTech.com offers great cabling services with patch panel that can hep speed up your entire network. For services, get in touch now at 646-975-9555"/>
+<meta name="keywords" content="computer services nyc,phone repair nyc, VOIP nyc, it company nyc, it consulting nyc, security camera nyc, it consultants nyc,wall mount nyc, web development, web design, online marketing, web development nyc"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Cabling Services | KccsTech" />
+<meta property="og:description" content="KccsTech.com offers great cabling services with patch panel that can hep speed up your entire network. For services, get in touch now at 646-975-9555"/>
+<meta property="og:url" content="http://www.kccstech.com/services/cabling" />
+<meta property="og:site_name" content="KccsTech" />
+{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
+
+<h1 style="text-decoration: underline">Cabling installation or cleanup</h1>
 <p><b>Location wide cabling and equipment setup to provide a functional business or home</b></p>
 <hr>
 <div class="row">
   <div class="col-lg-6">
-    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/tech.jpg' %}" alt="">
+    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/cabling.jpg' %}" alt="Cat 5 and 6 cables">
   </div>
   <div class="col-lg-6">
     <p>1. <b>Business</b>- Cat5/Cat6 cable installation with patch panel.</p>
-    <p>2. <b>Home or home office</b>- Cat5/Cat6 installation with patch panel or single cables,double or duplex. </p>
+    <p>2. <b>Home or home office</b>- Cat5/Cat6 installation with patch panel or single cables running from end points. </p>
   </div>
 </div>
 

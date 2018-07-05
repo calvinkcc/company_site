@@ -4,11 +4,24 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
+    {% block meta %}
+    <title>Services | KccsTech</title>
+    <meta name="description" content="KccsTech.com offers a great deal of varieties IT servics. For IT support, get in touch now at 646-975-9555"/>
+    <meta name="keywords" content="computer services nyc, it company nyc, it consulting nyc, security camera nyc, it consultants nyc,web development, web design, online marketing, web development nyc,phone fix ny,it brooklyn"/>
+    <link rel="canonical" href="http://www.kccstech.com/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Services | KccsTech"/>
+    <meta property="og:description" content="KccsTech.com offers a great deal of varieties IT servics. For IT support, get in touch now at 646-975-9555" />
+    <meta property="og:url" content="http://www.kccstech.com/" />
+    <meta property="og:site_name" content="KccsTech" />
+    {% endblock %}
     <link rel="shortcut icon" type="image/jpg" href="{% static 'my_company/images/header.ico' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>KccsTech</title>
+    {% block css %}
     <link rel="stylesheet" href="{% static 'my_company/css/master.css' %}">
+    {% endblock %}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121347650-1"></script>
     <script>
@@ -26,14 +39,15 @@
             <div class="col-md-6">
               <p><i class="fa fa-clock-o"></i>Business hours: Mon-Sun 9 A.M-9 P.M - Remote support is 24/7</p>
             </div>
-            <div class="col-md-4">
-              <p><i class="fa fa-phone"></i>Phone No. 123-123-1234</p>
+            <div class="col-md-3">
+              <p><i class="fa fa-phone"></i>Phone No. 646-975-9555</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="row">
-                <a id="top_a" href="#"><i id="social_1" class="fa fa-facebook"></i></a>
-                <a id="top_a" href="#"><i id="social_1" class="fa fa-twitter"></i></a>
-                <a id="top_a" href="#"><i id="social_1" class="fa fa-youtube"></i></a>
+                <p class="text-left text-white">Follow us   </p>
+                <a id="top_a" href="https://www.facebook.com/kccstech/"><i id="social_1" class="fa fa-facebook"></i></a>
+                <a id="top_a" href="https://twitter.com/kccstechco"><i id="social_1" class="fa fa-twitter"></i></a>
+                <a id="top_a" href="https://www.youtube.com/channel/UCmHMyRkl3X6hUC46Gj3BTMg?view_as=subscriber"><i id="social_1" class="fa fa-youtube"></i></a>
               </div>
             </div>
           </div>
@@ -41,7 +55,7 @@
       </div>
       <nav id="navbar-2" class="navbar navbar-expand-lg navbar-light navbar-custom p-0 sticky-top">
         <div class="container">
-          <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'my_company/images/brand.jpg' %}" width="180" height="50" alt=""></a>
+          <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'my_company/images/brand1.png' %}" width="200" height="80" alt="KCCS TECH Logo"></a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -63,9 +77,9 @@
                   <a class="dropdown-item" href="{% url 'services:other_devices' %}">Wall Mount for Home/Business</a>
                 </div>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="{% url 'features:features' %}">Features</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'about_us:about_us' %}">About Us</a>
               </li>
@@ -73,17 +87,22 @@
                 <a class="nav-link" href="{% url 'contact_us:contact_us' %}">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'blog:blog' %}">Blog</a>
+                <a class="nav-link" href="{% url 'blog:blog_list' %}">Blog</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <img src="{% static 'my_company/images/pic.jpg' %}" class="cover img-fluid" />
+      <section id="service-slide">
+        <div class="container">
+          <h1><strong>CONTACT US NOW AND SETUP AN APPOINTMENT FOR FREE CONSULTATION!</strong></h1>
+          <p><a class="btn btn-lg btn-primary" href="{% url 'contact_us:contact_us' %}" role="button">Get In Touch NOW</a></p>
+        </div>
+      </section>
       <div class="container-fluid">
         <div class="row d-flex d-mb-block flex-nowrap wrapper">
           <div class="col-md-3 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
-            <div class="list-group border-0 card text-center text-md-left sticky-top sticky-offset">
+            <div class="list-group rounded-0 card text-center text-md-left sticky-top sticky-offset">
               <a href="{% url 'services:web_development' %}" class="list-group-item d-inline-block collapsed"><i class="fa fa-file-code-o"></i> <span class="d-none d-md-inline">Web Development/Design</span> </a>
               <a href="{% url 'services:web_marketing' %}" class="list-group-item d-inline-block collapsed"><i class="fa fa-bar-chart-o"></i> <span class="d-none d-md-inline">Online Marketing</span></a>
               <a href="{% url 'services:phone_fix' %}"class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-mobile"></i> <span class="d-none d-md-inline">Phone Repair</span></a>
@@ -96,7 +115,6 @@
             </div>
           </div>
           <main class="col-md-9 float-left col px-5 pl-md-2 pt-2 main">
-            <!-- <a href="#" data-target="#sidebar" data-toggle="collapse"><i class="fa fa-navicon fa-2x py-2 p-1"></i></a> -->
             {% block content %}
             <h1>Base</h1>
             {% endblock %}
@@ -107,16 +125,19 @@
       <footer class="page-footer pt-4 mt-4" style="background-color: #08202e;">
         <div class="container-fluid text-center text-md-left">
           <div class="row">
-            <div class="col-md-6 mt-md-0 mt-3">
-              <h5 class="text-left"><img src="{% static 'my_company/images/brand.jpg' %}" width="180" height="50" alt=""></h5>
+            <div class="col-md-8 mt-md-0 mt-3">
+              <h5 class="text-left"><img src="{% static 'my_company/images/brand1.png' %}" width="200" height="80" alt="KCCS TECH Logo"></h5>
               <p class="text-left text-white">No <strong>STORE FRONT</strong> we bring <strong>"ONE STOP"</strong> tech solutions to your doorstep.</p>
               <p class="text-left text-white"><i class="fa fa-clock-o"></i> Business hours: Mon-Sun 9 A.M-9 P.M - Remote support is 24/7</p>
-              <p class="text-left text-white"><i class="fa fa-phone"></i> Phone No. 123-123-1234</p>
+              <p class="text-left text-white"><i class="fa fa-phone"></i> Phone No. 646-975-9555 | Email: support@kccstech.com</p>
             </div>
-            <div class="row">
-                <a id="footer_a" href="#"><i id="social_2" class="fa fa-facebook"></i></a>
-                <a id="footer_a" href="#"><i id="social_2" class="fa fa-twitter"></i></a>
-                <a id="footer_a" href="#"><i id="social_2" class="fa fa-youtube"></i></a>
+            <div class="col-md-4 mt-md-0 mt-3">
+              <h1 class="text-white"><strong>Follow us</strong></h1>
+              <div class="row">
+                  <a id="footer_a" href="https://www.facebook.com/kccstech/"><i id="social_2" class="fa fa-facebook"></i></a>
+                  <a id="footer_a" href="https://twitter.com/kccstechco"><i id="social_2" class="fa fa-twitter"></i></a>
+                  <a id="footer_a" href="https://www.youtube.com/channel/UCmHMyRkl3X6hUC46Gj3BTMg?view_as=subscriber"><i id="social_2" class="fa fa-youtube"></i></a>
+              </div>
             </div>
           </div>
           <div class="footer-copyright text-center py-1">

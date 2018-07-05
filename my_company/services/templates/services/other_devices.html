@@ -1,13 +1,30 @@
 {% extends "services/service_base.html" %}
-{% block content %}
 {% load staticfiles %}
 
-<h2 style="text-decoration: underline">Wall Mounts</h2>
+{% block meta %}
+<title>Wall Mount | KccsTech</title>
+<meta name="description" content="KccsTech.com can assist you in TV wall mount at home or business TV or Computer monitor wall mount. For services, get in touch now at 646-975-9555"/>
+<meta name="keywords" content="computer services nyc,phone repair nyc, VOIP nyc, it company nyc, it consulting nyc, security camera nyc, it consultants nyc,wall mount nyc, web development, web design, online marketing, web development nyc"/>
+<link rel="canonical" href="http://www.kccstech.com/services/other_devices" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Wall Mount | KccsTech" />
+<meta property="og:description" content="KccsTech.com can assist your need in TV wall mount at home or business TV or Computer monitor wall mount. For services, get in touch now at 646-975-9555"/>
+<meta property="og:url" content="http://www.kccstech.com/services/other_devices" />
+<meta property="og:site_name" content="KccsTech" />
+{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
+<h1 style="text-decoration: underline">Wall Mounts</h1>
 <p><b>Wall mount for home or office settings i.e. conference rooms</b></p>
 <hr>
 <div class="row">
   <div class="col-lg-6">
-    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/tech.jpg' %}" alt="">
+    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/tech.jpg' %}" alt="iphone tablet computer hands">
   </div>
   <div class="col-lg-6">
     <p>1. <b>Home setting</b>- Wall mount TV for home setting

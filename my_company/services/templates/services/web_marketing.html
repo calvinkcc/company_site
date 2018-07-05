@@ -1,16 +1,34 @@
 {% extends "services/service_base.html" %}
-{% block content %}
 {% load staticfiles %}
 
-<h2 style="text-decoration: underline">Online Marketing</h2>
+{% block meta %}
+<title>Online Marketing and SEO | KccsTech</title>
+<meta name="description" content="KccsTech.com offers the best solution to online marketing specialize in SEO and a variety of social media marketing. For services, get in touch now at 646-975-9555"/>
+<meta name="keywords" content="computer services nyc,phone repair nyc, VOIP nyc, it company nyc, it consulting nyc, security camera nyc, it consultants nyc,wall mount nyc, web development, web design, online marketing, web development nyc"/>
+<link rel="canonical" href="http://www.kccstech.com/services/web_marketing" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Online Marketing and SEO | KccsTech" />
+<meta property="og:description" content="KccsTech.com offers the best solution to online marketing specialize in SEO and a variety of social media marketing. For services, get in touch now at 646-975-9555"/>
+<meta property="og:url" content="http://www.kccstech.com/services/web_marketing" />
+<meta property="og:site_name" content="KccsTech" />
+{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
+
+<h1 style="text-decoration: underline">Online Marketing</h1>
 <p><b>Need advertising help or marketing/branding consultant?</b></p>
 <hr>
 <div class="row">
   <div class="col-lg-6">
-    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/tech.jpg' %}" alt="">
+    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/marketing.jpg' %}" alt="marketing on desktop">
   </div>
   <div class="col-lg-6">
-    <p>We have a set of rules when advertising and marketing for businesses. <br>1. <b>Budget</b>- We will ask for very little.
+    <p>We have a set of rules when advertising and marketing for businesses. <br>1. <b>Budget</b>- We will ask for very little at the beginning.
       <br>2. <b>Targeted Audience</b>- We will help you define what's best.
         <br>3. <b>Proposal</b>- We proceed with the proposal only if you like it.
         <br>4. <b>Action</b>- We will take into many forms of advertising on social media platforms, ads and SEO(Search Engine Optimization).

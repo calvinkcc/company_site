@@ -1,0 +1,9 @@
+p,h1,h2,h3{
+  line-height: 1.6;
+  margin: 0 0 10px;
+  margin-bottom: 1.5em;
+  font-weight: lighter;
+}
+p{
+  font-size: 17px;
+}

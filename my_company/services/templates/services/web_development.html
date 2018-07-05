@@ -1,16 +1,34 @@
 {% extends "services/service_base.html" %}
-{% block content %}
 {% load staticfiles %}
 
-<h2 style="text-decoration: underline">Web Development</h2>
+{% block meta %}
+<title>Web Development or Design | KccsTech</title>
+<meta name="description" content="KccsTech.com offers a lot of different web designs and full stack web development to meet your virtual demands. For services, get in touch now at 646-975-9555"/>
+<meta name="keywords" content="computer services nyc,phone repair nyc, VOIP nyc, it company nyc, it consulting nyc, security camera nyc, it consultants nyc,wall mount nyc, web development, web design, online marketing, web development nyc"/>
+<link rel="canonical" href="http://www.kccstech.com/services/web_development" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Web Development or Design | KccsTech" />
+<meta property="og:description" content="KccsTech.com offers a lot of different web designs and full stack web development to meet your virtual demands. For services, get in touch now at 646-975-9555"/>
+<meta property="og:url" content="http://www.kccstech.com/services/web_development" />
+<meta property="og:site_name" content="KccsTech" />
+{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
+
+<h1 style="text-decoration: underline">Web Development</h1>
 <p><b>Looking to showcase your business into the online world?</b></p>
 <hr>
 <div class="row">
   <div class="col-lg-6">
-    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/tech.jpg' %}" alt="">
+    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/webdev.jpg' %}" alt="web development coding programming">
   </div>
   <div class="col-lg-6">
-    <p><b>Full web development service- </b>We are capable of development your entire web service for your clients to meet the virtual demands. The host and DNS name will be up to the client and we will also
+    <p><b>Full web development service- </b>We are capable of developing your entire web service for clients to meet their virtual demands. The host and DNS name will be up to the client and we will also
       take care of that for you accordingly. This service does not just create a site and just throw it back at you. We will offer you full documentations of development, setup and future support.</p>
       <p><b>Only Web Design Service- </b>Have a website? But not sure if the design attracts the right customer for you? Let us help you and make sure the designs are for the right consumer.</p>
   </div>

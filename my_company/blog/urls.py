@@ -8,7 +8,7 @@ from django.conf.urls.static import static
 app_name = 'blog'
 
 urlpatterns = [
-    url(r'^$', ListView.as_view(queryset=Blog.objects.all().order_by("-date")[:10], template_name="blog/blog.html"),name="blog"),
-    url(r'^(?P<pk>\d+)$', DetailView.as_view(model=Blog,template_name="blog/post.html")),
+    url(r'^$', ListView.as_view(queryset=Blog.objects.all().order_by("-date")[:10], template_name="blog/blog.html"),name='blog_list'),
+    url(r'^(?P<pk>\d+)$', views.PostDetailView.as_view(), name='blog_detail'),
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

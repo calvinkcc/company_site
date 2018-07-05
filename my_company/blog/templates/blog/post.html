@@ -1,13 +1,33 @@
 {% extends "base.html" %}
 {% load staticfiles %}
+
+{% block meta %}
+  <title>{{blog.title}} | KccsTech</title>
+  <meta name="description" content="View {{blog.title}} in KccsTech.com. For services, get in touch now at 646-975-9555"/>
+  <meta name="keywords" content="computer services nyc,phone repair nyc, VOIP nyc, it company nyc, it consulting nyc, security camera nyc, it consultants nyc,wall mount nyc, web development, web design, online marketing, web development nyc"/>
+  <link rel="canonical" href="http://www.kccstech.com/blog/{{blog.id}}" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{blog.title}} | KccsTech" />
+  <meta property="og:description" content="View {{blog.title}} in KccsTech.com. For services, get in touch now at 646-975-9555" />
+  <meta property="og:url" content="http://www.kccstech.com/blog/{{blog.id}}" />
+  <meta property="og:site_name" content="KccsTech" />
+{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
 {% block content %}
-
-
-{{blog.text|safe|linebreaks}}
-{{blog.title|safe|linebreaks}}
-{{blog.description|safe|linebreaks}}
-
-
-
-
+<div class="container">
+  <div class="jumbotron bg-light">
+    <h1><strong>{{blog.title}}</strong></h1>
+    <hr>
+    <img class="img-fluid" src="{{blog.image.url}}" alt="security camera">
+    <p>{{blog.description|safe}}</p>
+    <p>{{blog.text|safe}}</p>
+    <hr>
+    <p>Posted on: {{blog.date}}</p>
+  </div>
+</div>
 {% endblock %}

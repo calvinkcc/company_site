@@ -1,10 +1,28 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% load staticfiles %}
+
+{% block meta %}
+  <title>Blogs | KccsTech</title>
+  <meta name="description" content="Hear what KccsTech.com blogs about everyday, maybe it can help you with your technology needs. For services, get in touch now at 646-975-9555"/>
+  <meta name="keywords" content="computer services nyc,phone repair nyc, VOIP nyc, it company nyc, it consulting nyc, security camera nyc, it consultants nyc,wall mount nyc, web development, web design, online marketing, web development nyc"/>
+  <link rel="canonical" href="http://www.kccstech.com/blog/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Blogs | KccsTech" />
+  <meta property="og:description" content="Hear what KccsTech.com blogs about everyday, maybe it can help you with your technology needs. For services, get in touch now at 646-975-9555" />
+  <meta property="og:url" content="http://www.kccstech.com/blog/" />
+  <meta property="og:site_name" content="KccsTech" />
+{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
 {% block content %}
 
 <div class="container">
-  <h1 class="mt-4 mb-3">Blog</h1>
-  <p>We leave interesting blogs here about tech related things!</p>
+  <h1 class="mt-4 mb-3"><strong>Blog</strong></h1>
+  <p><strong>We leave interesting blogs here about tech related things!</strong></p>
   <hr>
 </div>
 {% for blog in object_list %}
@@ -14,12 +32,12 @@
       <div class="row">
         <div class="col-lg-6">
           <a href="#"></a>
-            <img class="img-fluid" src="{% static 'my_company/images/tech.jpg' %}" alt="">
+            <img class="img-fluid" src="{{blog.image.url}}" alt="security camera">
         </div>
 
         <div class="col-lg-6">
-          <h2 class="card-title">{{blog.title}}</h2>
-          <p class="card-text">{{blog.description}}</p>
+          <h1 class="card-title"><strong>{{blog.title}}</strong></h1>
+          <p class="card-text">{{blog.description|safe|linebreaks}}</p>
             <a href="/blog/{{ blog.id }}" class="btn btn-primary">Read More</a>
         </div>
 

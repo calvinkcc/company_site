@@ -1,16 +1,34 @@
 {% extends "services/service_base.html" %}
-{% block content %}
 {% load staticfiles %}
 
-<h2 style="text-decoration: underline">Security Camera/Smart Home Devices Installation</h2>
+{% block meta %}
+<title>Security Camera Installation | KccsTech</title>
+<meta name="description" content="KccsTech.com services a variety of security camera installation specializing in NVRs and IP cameras. For services, get in touch now at 646-975-9555"/>
+<meta name="keywords" content="computer services nyc,phone repair nyc, VOIP nyc, it company nyc, it consulting nyc, security camera nyc, it consultants nyc,wall mount nyc, web development, web design, online marketing, web development nyc"/>
+<link rel="canonical" href="http://www.kccstech.com/services/security_camera" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Security Camera Installation | KccsTech" />
+<meta property="og:description" content="KccsTech.com services a variety of security camera installation specializing in NVRs and IP cameras. For services, get in touch now at 646-975-9555"/>
+<meta property="og:url" content="http://www.kccstech.com/services/security_camera" />
+<meta property="og:site_name" content="KccsTech" />
+{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
+
+<h1 style="text-decoration: underline">Security Camera/Smart Home Devices Installation</h1>
 <p><b>Secure your business or home with security cameras and smart home devices.</b></p>
 <hr>
 <div class="row">
   <div class="col-lg-6">
-    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/tech.jpg' %}" alt="">
+    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/camera.jpg' %}" alt="security camera image">
   </div>
   <div class="col-lg-6">
-    <p><b>The cameras and setup we conduct depend on your budget. But as recommended we will always recommend cameras with NVRs that are POE(Power Over Ethernet).</b></p>
+    <p><b>The cameras and setup depend on your budget. But as recommended we will always recommend cameras with NVRs that are POE(Power Over Ethernet).</b></p>
     <p>1. <b>Business</b>- Security camera installation with DVR or NVR, client's choice and budget will be match accordingly.</p>
     <p>2. <b>Home or home office</b>- Security camera installation with DVR or NVR, client's choice and budget will be match accordingly. We can also installation smart home devices like Alexa
       , smart doorbell, smart doorlock and etc..</p>

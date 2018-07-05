@@ -25,7 +25,7 @@ SECRET_KEY = 'nh*hkal4j%si9eetfg+4di2hl56p!rs)7v96^3y1&0(kf(ced8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['calvinkcc3.pythonanywhere.com','www.kccstech.com','kcctech.com','.kcctech.com','127.0.0.1']
+ALLOWED_HOSTS = ['www.kccstech.com','kcctech.com','.kcctech.com','127.0.0.1']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
     'bootstrap3',
     'home',
     'contact_us',
