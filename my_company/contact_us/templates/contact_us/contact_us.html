@@ -1,28 +1,44 @@
 {% extends "base.html" %}
-{% block content %}
 {% load bootstrap3 %}
 {% load staticfiles %}
-<head>
-  <link rel="stylesheet" href="{% static 'my_company/css/contact_us.css' %}">
-</head>
+
+{% block meta %}
+<title>Contact Us | KccsTech</title>
+<meta name="description" content="Contact KccsTech.com, located in brooklyn ny, but servicing on the web as well . For services, get in touch now at 646-975-9555"/>
+<meta name="keywords" content="computer services nyc,phone repair nyc, VOIP nyc, it company nyc, it consulting nyc, security camera nyc, it consultants nyc,wall mount nyc, web development, web design, online marketing, web development nyc"/>
+<link rel="canonical" href="http://www.kccstech.com/contact_us/contact_us" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Contact Us | KccsTech" />
+<meta property="og:description" content="Contact KccsTech.com, located in brooklyn ny, but servicing on the web as well . For services, get in touch now at 646-975-9555"/>
+<meta property="og:url" content="http://www.kccstech.com/contact_us/contact_us" />
+<meta property="og:site_name" content="KccsTech" />
+{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
+
 <section id="contact-us">
   <div class="container">
     <div class="row">
       <div class="col-lg-4 mb-4">
-        <div class="jumbotron" id="container-1">
-          <h3>Contact Us</h3>
+        <div class="jumbotron" style="background-color:white;">
+          <h1>Contact Us</h1>
           <p>For any support, questions or inquires: <br>
             Email us at
-            <a href="mailto:kccstechcompany@gmail.com" target="_blank">kccstechcompany@gmail.com</a>
-            <br> or call us at: 123-123-1234
+            <a href="mailto:support@kccstech.com" target="_blank">support@kccstech.com</a>
+            <br> or call us at: 646-975-9555
           </p>
-          <a id="top_a" href="#"><i id="social_1" class="fa fa-facebook"></i></a>
-          <a id="top_a" href="#"><i id="social_1" class="fa fa-twitter"></i></a>
-          <a id="top_a" href="#"><i id="social_1" class="fa fa-youtube"></i></a>
+          <a id="top_a" href="https://www.facebook.com/kccstech/"><i id="social_1" class="fa fa-facebook"></i></a>
+          <a id="top_a" href="https://twitter.com/kccstechco"><i id="social_1" class="fa fa-twitter"></i></a>
+          <a id="top_a" href="https://www.youtube.com/channel/UCmHMyRkl3X6hUC46Gj3BTMg?view_as=subscriber"><i id="social_1" class="fa fa-youtube"></i></a>
         </div>
       </div>
       <div class="col-lg-8 mb-4">
-        <div class="jumbotron" id="container-1">
+        <div class="jumbotron" style="background-color:white;">
           <h1>Send us a Message</h1>
           <div class="contact-form" id="contact_form">
             <form method="POST">

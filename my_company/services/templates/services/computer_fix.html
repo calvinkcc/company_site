@@ -1,19 +1,37 @@
 {% extends "services/service_base.html" %}
-{% block content %}
 {% load staticfiles %}
 
-<h2 style="text-decoration: underline">Computer Issues</h2>
+{% block meta %}
+<title>Computer Services | KccsTech</title>
+<meta name="description" content="KccsTech.com offers great computer services for business standards and custom built for home. For services, get in touch now at 646-975-9555"/>
+<meta name="keywords" content="computer services nyc,phone repair nyc, VOIP nyc, it company nyc, it consulting nyc, security camera nyc, it consultants nyc,wall mount nyc, web development, web design, online marketing, web development nyc"/>
+<link rel="canonical" href="http://www.kccstech.com/services/computer_fix" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Computer Services | KccsTech" />
+<meta property="og:description" content="KccsTech.com offers great computer services for business standards and custom built for home. For services, get in touch now at 646-975-9555"/>
+<meta property="og:url" content="http://www.kccstech.com/services/computer_fix" />
+<meta property="og:site_name" content="KccsTech" />
+{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
+<h1 style="text-decoration: underline">Computer Issues</h1>
 <p><b>Computer we specialize in PCs with Windows or Linux OS, unfortunately we don't service Mac. But if you call us we will always try our best to consult for free with Mac even if we have to find another party to help you.</b></p>
 <hr>
 <div class="row">
   <div class="col-lg-6">
-    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/tech.jpg' %}" alt="">
+    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/computer.jpg' %}" alt="computer">
   </div>
   <div class="col-lg-6">
-    <p>1. <b>Hardware</b>- If there is an hardware issue, we can help replace the part.</p>
-    <p>2. <b>Software</b>- If you need software specifically for your company but need consultant or remote support we can help.</p>
-    <p>3. <b>Custom PC build</b>- Need a beast gaming PC or for other purposes, we can help as well with low budget.</p>
-    <p>4. <b>Business standard PCs</b>- Replacement of old business PCs or upgrade them.</p>
+    <p>1. <b>Hardware</b>- If there is an hardware issue, we can help isolate the issue and if needed, replace the part.</p>
+    <p>2. <b>Software</b>- If you need software specifically for your company but need consultant or remote support we can help as well.
+        We are capable of remote desktop support and able to debug your issues. Such as printer not printer or the likes.</p>
+    <p>3. <b>Custom PC build</b>- Need a beast gaming PC or any other purposes, we can help as well with low budget. We have been building computers for a long time as low budget with quality parts.</p>
+    <p>4. <b>Business standard PCs</b>- Your business need a set of computers for daily operations? We can help with that also. We can also help you replace your old sets of computers.</p>
   </div>
 </div>
 

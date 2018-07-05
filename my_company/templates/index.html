@@ -1,16 +1,26 @@
 {% extends "base.html" %}
-{% block content %}
 {% load staticfiles %}
-<head>
-  <link rel="stylesheet" href="{% static 'my_company/css/index.css' %}">
-</head>
-<script>
-  $(function(){
-    $('#video-carousel-example').carousel({
-      interval: 2000
-    });
-  });
-</script>
+
+{% block meta %}
+<title>KccsTech | Tech Service Company | NYC</title>
+<meta name="description" content="KccsTech.com is the best IT company for IT services, web development, security camera and online marketing. For services, get in touch now at 646-975-9555"/>
+<meta name="keywords" content="computer services nyc, it company nyc, it consulting nyc, security camera nyc, it consultants nyc, managed it services nyc,web development, web design, online marketing, web development nyc"/>
+<link rel="canonical" href="http://www.kccstech.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="IT Support Company | Web Development | NYC" />
+<meta property="og:description" content="KccsTech.com is the best IT company for IT services, web development, security camera and online marketing. For services, get in touch now at 646-975-9555"/>
+<meta property="og:url" content="http://www.kccstech.com/" />
+<meta property="og:site_name" content="KccsTech" />
+<meta property="og:image" content="http://www.kccstech.com/static/my_company/images/brand1.png"/>
+<meta property="og:image:secure_url" content="http://www.kccstech.com/static/my_company/images/brand1.png"/>
+{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
 <!--Carousel Wrapper-->
 <header>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -20,33 +30,33 @@
           <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="first-slide" src="{% static 'my_company/images/slide1.jpg' %}" alt="First slide">
+          <div id="index-carousel" class="carousel-item active">
+            <img class="first-slide" src="{% static 'my_company/images/slide1.jpg' %}" alt="GUY WITH TABLET">
             <div class="container">
               <div id="cap1" class="carousel-caption text-left">
-                <h2><strong>TIRED OF SLOW NETWORK AND DEVICES?</strong></h2>
-                <h2><strong>CONTACT US NOW!</strong></h2>
+                <h1 id="slide-header-1"><strong>TIRED OF SLOW NETWORK AND DEVICES?</strong></h1>
+                <h1 id="slide-header-1"><strong>CONTACT US NOW!</strong></h1>
                 <p><a class="btn btn-lg btn-primary" href="{% url 'contact_us:contact_us' %}" role="button">Contact</a></p>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img id="slide2" class="second-slide" src="{% static 'my_company/images/slide2.jpg' %}" alt="Second slide">
+          <div id="index-carousel" class="carousel-item">
+            <img id="slide2" class="second-slide" src="{% static 'my_company/images/slide2.jpg' %}" alt="DESIGNER DESIGNING">
             <div class="container">
               <div id="cap2" class="carousel-caption text-left">
-                <h2><strong>NEED A WEBSITE OR AN ATTRACTIVE WEB DESIGN?</strong></h2>
-                <h2><strong>WANT TO ATTRACT MORE CUSTOMERS?</strong></h2>
+                <h1 id="slide-header-2"><strong>NEED A WEBSITE OR AN ATTRACTIVE WEB DESIGN?</strong></h1>
+                <h1 id="slide-header-2"><strong>WANT TO ATTRACT MORE CUSTOMERS?</strong></h1>
                 <p><a class="btn btn-lg btn-primary" href="{% url 'services:web_development' %}" role="button">Click Here to Learn More</a></p>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img class="third-slide" src="{% static 'my_company/images/slide3.jpg' %}" alt="Third slide">
+          <div id="index-carousel" class="carousel-item">
+            <img class="third-slide" src="{% static 'my_company/images/slide3.jpg' %}" alt="PICTURE WITH BUILDINGS">
             <div class="container">
               <div id="cap3" class="carousel-caption text-center">
-                <h2><strong>WE ARE HERE TO BUILD YOUR TECHNOLOGY FOUNDATION</strong></h2>
-                <h4><strong>Serving All Five Boroughs of New York</strong></h4>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More About Us</a></p>
+                <h1 id="slide-header-3"><strong>WE ARE HERE TO BUILD YOUR TECHNOLOGY FOUNDATION</strong></h1>
+                <h2><strong>Serving All Five Boroughs of New York</strong></h2>
+                <p><a class="btn btn-lg btn-primary" href="{% url 'about_us:about_us' %}" role="button">Learn More About Us</a></p>
               </div>
             </div>
           </div>
@@ -67,12 +77,12 @@
     <div class="row align-items-center">
       <div class="col-lg-6 order-lg-2">
         <div class="p-5">
-          <img class="img-fluid rounded-circle" src="{%  static 'my_company/images/tech.jpg' %}" alt>
+          <img class="img-fluid rounded-circle" src="{%  static 'my_company/images/tech.jpg' %}" alt="Index Image">
         </div>
       </div>
       <div class="col-lg-6 order-lg-1">
         <div class="p-5">
-          <h2 id="headings"><strong>Who we are?</strong></h2>
+          <h1 id="index-headings"><strong>WHO WE ARE?</strong></h1>
           <p>Our team mostly consist of tech savvy college educated dudes with modern technology experiences and enterprise IT experiences.
             We grew up on technology and always thought to ourselves, "How are we going to survive without our techs?"
             The answer is <b>NO</b>, we can't survive without our phone, computer, and internet. That's goes for a home
@@ -90,12 +100,12 @@
     <div class="row align-items-center">
       <div class="col-lg-6">
         <div class="p-5">
-          <img class="img-fluid rounded-circle" src="{% static 'my_company/images/tech.jpg' %}" alt=>
+          <img class="img-fluid rounded-circle" src="{% static 'my_company/images/tech.jpg' %}" alt="Index Image-2">
         </div>
       </div>
       <div class="col-lg-6">
         <div class="p-5">
-          <h2 id="headings"><strong>What we service?</strong></h2>
+          <h1 id="index-headings"><strong>WHAT WE SERVICE?</strong></h1>
           <p>
             <ul>
               <li>Aim to service to home and business environments</li>
@@ -117,12 +127,12 @@
     <div class="row align-items-center">
       <div class="col-lg-6 order-lg-2">
         <div class="p-5">
-          <img class="img-fluid rounded-circle" src="{% static 'my_company/images/tech.jpg' %}" alt>
+          <img class="img-fluid rounded-circle" src="{% static 'my_company/images/tech.jpg' %}" alt="Index Image-3">
         </div>
       </div>
       <div class="col-lg-6 order-lg-1">
         <div class="p-5">
-          <h2 id="headings"><strong>Why choose us?</strong></h2>
+          <h1 id="index-headings"><strong>WHY CHOOSE US?</strong></h1>
           <p>1. When you choose us and contract to us we will take care of you 24/7. We plan on expanding our remote support and make sure all our clients have 0 wait time.</p>
           <p>2. Your also choosing a young company that's going to grow in experience with your company and also constant development of modern technology experiences/knowledges. How? because most of our team members are young
             and ready to take on any challenges.</p>

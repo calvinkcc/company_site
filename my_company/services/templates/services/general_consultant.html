@@ -1,18 +1,36 @@
 {% extends "services/service_base.html" %}
-{% block content %}
 {% load staticfiles %}
 
-<h2 style="text-decoration: underline">IT Consultant</h2>
+{% block meta %}
+<title>IT Consultant | KccsTech</title>
+<meta name="description" content="KccsTech.com offers great IT consultant that can help your business grow virtually and at low budget. For services, get in touch now at 646-975-9555"/>
+<meta name="keywords" content="computer services nyc,phone repair nyc, VOIP nyc, it company nyc, it consulting nyc, security camera nyc, it consultants nyc,wall mount nyc, web development, web design, online marketing, web development nyc"/>
+<link rel="canonical" href="http://www.kccstech.com/services/general_consultant" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="IT Consultant | KccsTech" />
+<meta property="og:description" content="KccsTech.com offers great IT consultant that can help your business grow virtually and at low budget. For services, get in touch now at 646-975-9555"/>
+<meta property="og:url" content="http://www.kccstech.com/services/general_consultant" />
+<meta property="og:site_name" content="KccsTech" />
+{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
+
+<h1 style="text-decoration: underline">IT Consultant</h1>
 <p><b>Network, computer, phone, cabling, and any other managed IT solution you need. </b></p>
 <hr>
 <div class="row">
   <div class="col-lg-6">
-    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/tech.jpg' %}" alt="">
+    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/consultant.jpg' %}" alt="consultants">
   </div>
   <div class="col-lg-6">
-    <p>1. <b>Startup Business</b>- IT consultant for startup company.</p>
-    <p>2. <b>Outdated IT Infrastructure</b>- Upgrade existing IT Infrastructure.</p>
-    <p>3. <b>Relocate</b>- Relocate business to another location.</p>
+    <p>1. <b>Startup Business</b>- Startup company looking for IT consultant or a team to build your structure.</p>
+    <p>2. <b>Outdated IT Infrastructure</b>- Looking to upgrade your slow and outdated infrastructure.</p>
+    <p>3. <b>Relocate</b>- Relocating your business to another location? We can help relocate the IT infrastructure as well and make sure it's ready to go in the new location.</p>
   </div>
 </div>
 

@@ -2,6 +2,15 @@
 	width:100%;
 	height: 100%;
 }
+/*  master fonts all webpages*/
+p,h1,h2,h3,h4,li{
+  line-height: 1.6;
+  font-weight: lighter;
+}
+p{
+  font-size: 17px;
+}
+/*  end font*/
 .topbar{
 	background-color: #37393c;
 	padding: 5px 0;
@@ -46,6 +55,7 @@ html {
   width: 100%;
   /* Set the fixed height of the footer here */
 }
+/* padding and margin for social media buttons */
 #social_2{
 	padding-top: 8px;
   font-size: 50px;
@@ -66,7 +76,7 @@ html {
 }
 #footer_a
 {
-	margin-top: 70px;
+	margin-top: 20px;
 	margin-left: 10px;
 	margin-right: 10px;
 }
@@ -88,26 +98,18 @@ html {
   background: #bb0000;
   color: white;
 }
-
+/* end social media css */
 
 /* service_base.html */
-@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */
-
+#service-slide{
+	min-height:500px;
+	background:url('/static/my_company/images/service-slide.jpg') no-repeat -100px -100px;
+	text-align: center;
+	color:#ffffff;
 }
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-
-}
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-
-}
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
-
-}
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
-
-}
-@media (min-width:1281px) { /* hi-res laptops and desktops */
-
+#service-slide h1{
+	padding-top: 250px;
+	font-weight: 700;
 }
 #sidebar {
     overflow: hidden;
@@ -142,7 +144,6 @@ html {
 /* closed state */
 #sidebar .list-group .list-group-item[aria-expanded="false"]::after {
   content: " \f0d7";
-  font-family: FontAwesome;
   display: inline;
   text-align: right;
   padding-left: 5px;
@@ -154,7 +155,6 @@ html {
 }
 #sidebar .list-group .list-group-item[aria-expanded="true"]::after {
   content: " \f0da";
-  font-family: FontAwesome;
   display: inline;
   text-align: right;
   padding-left: 5px;
@@ -177,7 +177,91 @@ html {
   padding-left: 40px;
 }
 
+
+.collapse.show {
+  visibility: visible;
+}
+.collapsing {
+  visibility: visible;
+  height: 0;
+  -webkit-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.collapsing.width {
+  -webkit-transition-property: width, visibility;
+  transition-property: width, visibility;
+  width: 0;
+  height: 100%;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+/* index page css */
+#index-headings{
+  color: #103f76;
+	font-weight:700;
+}
+#myCarousel .carousel-inner h1{
+	font-weight:700;
+}
+/* Carousel base class */
+#myCarousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+#cap1,#cap2,#cap3{
+  bottom: 3rem;
+  z-index: 10;
+  left: 15%;
+  top: 50% !important;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+/* Declare heights because of positioning of img element */
+#index-carousel{
+  height: 32rem;
+  background-color: #777;
+}
+#index-carousel > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+/* index page css ends */
+
+/* contact_us.html css */
+#contact-us {
+    padding: 50px 20px;
+    position: relative;
+    /* background: #f7f7f7; */
+    background-color: #f5f7fa;
+}
+/* contact_us.html end */
+
 @media (max-width:768px) {
+	/* index page class */
+	#slide2{
+    transform: translateX(-50%);
+  }
+  #slide-header-1{
+    font-size:30px;
+  }
+  #slide-header-2{
+    font-size:30px;
+  }
+  #slide-header-3{
+    font-size:30px;
+  }
+	/* service_base slide for smaller screens */
+	#service-slide h1{
+		padding-top:50px;
+		font-size:32px;
+	}
+	/* service_base.html end */
+
     #sidebar {
         min-width: 35px;
         max-width: 40px;
@@ -186,7 +270,6 @@ html {
         transition: all 0.25s ease;
         transform: translateX(-45px);
     }
-
     #sidebar.show {
         transform: translateX(0);
     }
@@ -218,24 +301,4 @@ html {
 			margin-left: 10px;
 			margin-right: 10px;
 		}
-}
-
-.collapse.show {
-  visibility: visible;
-}
-.collapsing {
-  visibility: visible;
-  height: 0;
-  -webkit-transition-property: height, visibility;
-  transition-property: height, visibility;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.collapsing.width {
-  -webkit-transition-property: width, visibility;
-  transition-property: width, visibility;
-  width: 0;
-  height: 100%;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
 }

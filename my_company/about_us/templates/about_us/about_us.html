@@ -1,18 +1,33 @@
 {% extends "base.html" %}
-{% block content %}
 {% load staticfiles %}
-<head>
+
+{% block meta %}
+<title>About Us | KccsTech</title>
+<meta name="description" content="KccsTech.com provides IT services, online marketing, security camera and other tech needs to businesses and homes. For services, get in touch now at 646-975-9555"/>
+<meta name="keywords" content="computer services nyc,phone repair nyc, VOIP nyc, it company nyc, it consulting nyc, security camera nyc, it consultants nyc,wall mount nyc, web development, web design, online marketing, web development nyc"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="About Us | KccsTech"/>
+<meta property="og:description" content="KccsTech.com provides IT services, online marketing, security camera and other tech needs to businesses and homes. For services, get in touch now at 646-975-9555"/>
+<meta property="og:url" content="http://www.kccstech.com/about_us/about_us"/>
+<meta property="og:site_name" content="KccsTech" />
+{% endblock %}
+
+{% block css %}
+{{ block.super }}
   <link rel="stylesheet" href="{% static 'my_company/css/about_us.css' %}">
-</head>
-<body style ="background-color:#f5f7fa">
+{% endblock %}
+
+
+{% block content %}
   <div class="container" id="container-1">
-    <div id="first-block" class="jumbotron">
-      <h1 id="h1-1"><b>Our Mission</b></h1>
-      <p id="p-1">To provide a, <b>"ONE STOP"</b> tech solution for your home and business</p>
-      <h2 id="h2-1"><b>About</b></h2>
-      <p id="p-2">In OneTech we strive a, <b>"ONE STOP"</b> solution to all your technology needs.
+    <div class="jumbotron">
+      <h1 class="text-center"><b>Our Mission</b></h1>
+      <p class="text-center">To provide a, <b>"ONE STOP"</b> tech solution for your home and business</p>
+      <h1 class="text-center"><b>About</b></h1>
+      <p class="text-center">In OneTech we strive a, <b>"ONE STOP"</b> solution to all your technology needs.
         What does that mean? That means we want to help you with your computer problems,
-        phone problems, and many other technology related problems. <br>
+        phone problems, network problems, web development, web design, security cameras, IT services, you name the tech and we can service it for you. <br>
         We want our customer to feel comfortable with us and let us help them with all
         their technology needs at home and in their businesses. This is why we offer
         all of these tech solutions and consultant. We don't want you calling 10 different
@@ -23,9 +38,9 @@
       </p>
     </div>
   </div>
-  <div class="container" id="container-2">
-    <div id="second-block" class="jumbotron">
-      <h1 id="h1-2"><b>Meet Our Team</b></h1>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="text-center"><b>Meet Our Team</b></h1>
       <div id="video-carousel-example" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
         <!--Indicators-->
         <ol class="carousel-indicators">
@@ -37,23 +52,23 @@
         <!--Slides-->
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <img id="cal-img" class="rounded-circle" src="{% static 'my_company/images/cal1.png' %}" alt="Not-found">
-            <h2 id="h2-2">{{ name.0 }}</h2>
-            <p id="p-3">{{ name.0.position}}</p>
-            <p id="p-4" >{{ name.0.description}}</p>
+            <img id="cal-img" class="rounded-circle" src="{% static 'my_company/images/cal1.png' %}" alt="Kafai Founder Image">
+            <h1 class="text-center">{{ name.0 }}</h1>
+            <p class="text-center">{{ name.0.position}}</p>
+            <p class="text-center" >{{ name.0.description}}</p>
+          </div>
+          <!-- <div class="carousel-item">
+            <img id="cal-img" class="rounded-circle" src="{% static 'my_company/images/cal1.png' %}" alt="Team Member Image">
+            <h1 class="text-center">{{ name.0 }}</h1>
+            <p class="text-center">{{ name.0.position}}</p>
+            <p class="text-center">{{ name.0.description}}</p>
           </div>
           <div class="carousel-item">
-            <img id="cal-img" class="rounded-circle" src="{% static 'my_company/images/cal1.png' %}" alt="Not-found">
-            <h2 id="h2-2">{{ name.0 }}</h2>
-            <p id="p-3">{{ name.0.position}}</p>
-            <p id="p-4">{{ name.0.description}}</p>
-          </div>
-          <div class="carousel-item">
-            <img id="cal-img" class="rounded-circle" src="{% static 'my_company/images/cal1.png' %}" alt="Not-found">
-            <h2 id="h2-2">{{ name.0 }}</h2>
-            <p id="p-3">{{ name.0.position}}</p>
-            <p id="p-4">{{ name.0.description}}</p>
-          </div>
+            <img id="cal-img" class="rounded-circle" src="{% static 'my_company/images/cal1.png' %}" alt="Team Member Image">
+            <h1 class="text-center">{{ name.0 }}</h1>
+            <p class="text-center">{{ name.0.position}}</p>
+            <p class="text-center">{{ name.0.description}}</p>
+          </div> -->
         </div>
         <!--/.Slides-->
         <!--Controls-->
@@ -69,5 +84,4 @@
       </div>
     </div>
   </div>
-</body>
 {% endblock %}

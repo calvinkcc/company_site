@@ -1,18 +1,35 @@
 {% extends "services/service_base.html" %}
-{% block content %}
 {% load staticfiles %}
 
-<h2 style="text-decoration: underline">Home/Business Network Infrastructure</h2>
+{% block meta %}
+<title>Network Infrastructure | KccsTech</title>
+<meta name="description" content="KccsTech.com can provide your IT infrastructure the proper networking at home or in your business. For services, get in touch now at 646-975-9555"/>
+<meta name="keywords" content="computer services nyc,phone repair nyc, VOIP nyc, it company nyc, it consulting nyc, security camera nyc, it consultants nyc,wall mount nyc, web development, web design, online marketing, web development nyc"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Network Infrastructure | KccsTech" />
+<meta property="og:description" content="KccsTech.com can provide your IT infrastructure the proper networking at home or in your business. For services, get in touch now at 646-975-9555"/>
+<meta property="og:url" content="http://www.kccstech.com/services/network" />
+<meta property="og:site_name" content="KccsTech" />
+{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
+
+<h1 style="text-decoration: underline">Home/Business Network Infrastructure</h1>
 <p><b>Full network installation/setup </b></p>
 <hr>
 <div class="row">
   <div class="col-lg-6">
-    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/tech.jpg' %}" alt="">
+    <img class="img-fluid rounded mb-4" src="{% static 'my_company/images/network.jpg' %}" alt="data center network">
   </div>
   <div class="col-lg-6">
     <p>1. <b>Business</b>- Proper installation of server room and network.</p>
     <p>2. <b>Home or home office</b>- Proper installation of home network in a small cabinet or client preferred.</p>
-    <p>For the network setup, we first contact your local ISP(internet service provider) and get the best possible price for your internet service. If we need fax or VoIP phones we can add those in as well.
+    <p>For the network setup, we first contact your local ISP(internet service provider) and get the best possible price for your internet service. If need fax or VoIP phones we can add those in as well.
         Devices we usually use to conduct a full network setup would be an ISP modem from the ISP, a physical firewall, a managed switch, and if needed we put in routers. But all these depend on the
         client's need and we will conduct the setup accordingly and at low budget.</p>
   </div>
