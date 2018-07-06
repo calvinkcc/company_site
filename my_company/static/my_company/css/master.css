@@ -10,6 +10,10 @@ p,h1,h2,h3,h4,li{
 p{
   font-size: 17px;
 }
+.btn{
+	background-color:#08202e;
+  color:#ffffff;
+}
 /*  end font*/
 .topbar{
 	background-color: #37393c;
@@ -119,8 +123,7 @@ html {
 }
 #sidebar .list-group {
     min-width: 200px;
-    background-color: #333;
-		min-height: 100vh;
+    background-color: #08202e;
 }
 #sidebar i {
     margin-right: 6px;
@@ -128,7 +131,7 @@ html {
 
 #sidebar .list-group-item {
     border-radius: 0;
-    background-color: #333;
+    background-color: #08202e;
     color: #ccc;
     border-left: 0;
     border-right: 0;
